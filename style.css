@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1E1E2E;
+}
+
+#box {
+    font-size: 0;
+    color: #fff;
+    background-color: #27293D;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .1);
+
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    max-width: 1100px;
+    padding: 20px 15px;
+
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+#box div.keyElem {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid #0098f0;
+    border-radius: 20px;
+    text-align: center;
+
+    display: inline-block;
+    margin: 5px 15px;
+    height: 110px;
+    width: calc(100% / 3 - 34px);
+
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+#box div.keyElem h1 {
+    font-size: 2rem;
+    margin: 5px 0;
+}
+
+#box div.keyElem div {
+    margin: 25px 0;
+    font-size: 1.75rem;
+}
+
+@media (min-width: 700px) and (max-width: 780px) {
+    #box {
+        width: 90%;
+    }
+
+    #box div.keyElem h1 {
+        font-size: 1.75rem;
+        margin: 5px 0;
+    }
+
+    #box div.keyElem div {
+        font-size: 1.5rem;
+        margin: 30px 0;
+    }
+}
+
+/* ---------------------------------------------------------------- phone size ----------------------------------------------------------------*/
+@media (max-width: 700px) {
+    #box {
+        width: 80%;
+        padding: 10px 10px;
+    }
+
+    #box div.keyElem {
+        display: block;
+        height: auto;
+        width: 95%;
+        margin: 30px auto;
+        padding: 2px 0;
+        min-height: 140px;
+    }
+
+    #box div.keyElem h1 {
+        font-size: 2.8rem;
+    }
+
+    #box div.keyElem div {
+        margin-bottom: 30px;
+        font-size: 2.1rem;
+        margin-bottom: 3px;
+    }
+
+    @media (min-height: 520px) and (max-height:630px) {
+        #box {
+            padding: 5px 10px;
+        }
+
+        #box div.keyElem {
+            margin: 15px auto;
+        }
+
+    }
+
+    @media (max-height: 520px) {
+        #box {
+            width: 65%;
+        }
+
+        #box div.keyElem {
+            margin: 5px auto;
+            min-height: 100px;
+        }
+
+        #box div.keyElem h1 {
+            font-size: 2rem;
+        }
+
+        #box div.keyElem div {
+            font-size: 1.5rem;
+            margin: 20px;
+        }
+    }
+
+}
